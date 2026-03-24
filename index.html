@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donna - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Donna</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="fade-in">Hi, I'm <span class="accent">Donna</span></h1>
+                    <p class="hero-subtitle fade-in">Student / Mother / Aspiring Developer</p>
+                    <p class="hero-description fade-in">Computer Science student at Palawan State University, balancing motherhood and my passion for technology</p>
+                    <div class="hero-buttons fade-in">
+                        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <div class="profile-pic">
+                        <img src="img/image.png" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hello! My name is Donna. I am the proud mother of one beautiful daughter and at the same time 
+                        a student at Palawan State University, taking up Bachelor of Science in Computer Science. 
+                        Being both a mother and a student inspires me to work hard and pursue my dreams.
+                    </p>
+                    <p>
+                        In my free time, I enjoy reading spoken poetry and listening to well-known spoken poetry artists. 
+                        Spoken poetry inspires me because it expresses deep emotions, creativity, and meaningful messages 
+                        about life. I also love playing badminton and listening to music, which help me relax and recharge.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h3>Proud Mother</h3>
+                                <p>Raising my beautiful daughter with love</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3>Dedicated Student</h3>
+                                <p>Pursuing Computer Science at PSU</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-book-open"></i>
+                            <div>
+                                <h3>Creative Soul</h3>
+                                <p>Inspired by spoken poetry and art</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-tech">
+                    <h3>My Interests & Hobbies</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag">Spoken Poetry</span>
+                        <span class="tech-tag">Reading</span>
+                        <span class="tech-tag">Playing Badminton</span>
+                        <span class="tech-tag">Listening to Music</span>
+                    </div>
+                    <h3 style="margin-top: 30px;">Favorite Websites</h3>
+                    <div class="tech-list">
+                        <span class="tech-tag"><i class="fab fa-facebook"></i> Facebook</span>
+                        <span class="tech-tag"><i class="fab fa-spotify"></i> Spotify</span>
+                        <span class="tech-tag"><i class="fab fa-youtube"></i> YouTube</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Projects and creations I'm working on</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <button class="card-header portfolio-image-trigger" data-image="img/act1.png" data-title="Activity 1: Shapes" aria-label="Open Activity 1: Shapes image">
+                        <img src="img/act1.png" alt="Activity 1: Shapes">
+                    </button>
+                    <h3>Activity 1: Shapes</h3>
+                </div>
+
+                <div class="portfolio-card">
+                    <button class="card-header portfolio-image-trigger" data-image="img/brochure.png" data-title="Activity Set: Brochure" aria-label="Open Activity Set: Brochure image">
+                        <img src="img/brochure.png" alt="Activity Set: Brochure">
+                    </button>
+                    <h3>Activity Set: Brochure</h3>
+                </div>
+
+                <div class="portfolio-card">
+                    <button class="card-header portfolio-image-trigger" data-image="img/act2.png" data-images="img/act2.png|img/act2-2.png" data-title="Activity 2: Mask Effect" aria-label="Open Activity 2: Mask Effect image">
+                        <img src="img/act2.png" alt="Activity 2: Mask Effect">
+                    </button>
+                    <h3>Activity 2: Mask Effect</h3>
+                </div>
+
+                <div class="portfolio-card">
+                    <button class="card-header portfolio-image-trigger" data-image="img/act3.png" data-title="Activity 3" aria-label="Open Activity 3 image">
+                        <img src="img/act3.png" alt="Activity 3">
+                    </button>
+                    <h3>Activity 3:Selection Tools</h3>
+                </div>
+
+                <div class="portfolio-card">
+                    <button class="card-header portfolio-image-trigger" data-image="img/act4-1.png" data-images="img/act4-1.png|img/act4-2.png|img/act4-3.png" data-title="Activity 4" aria-label="Open Activity 4 image">
+                        <img src="img/act4-1.png" alt="Activity 4">
+                    </button>
+                    <h3>Activity 4: Photoshop Text Styling Using Layer Styles</h3>
+                </div>
+
+                <div class="portfolio-card">
+                    <button class="card-header portfolio-image-trigger" data-image="img/act5.png" data-title="Activity 5" aria-label="Open Activity 5 image">
+                        <img src="img/act5.png" alt="Activity 5">
+                    </button>
+                    <h3>Activity 5: Blending Modes</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's connect and share our journeys</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out! I'd love to connect with fellow students, parents, or anyone who shares similar interests in technology and poetry.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>donna22@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Palawan, Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://facebook.com/jane.sagirb" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://spotify.com" target="_blank" aria-label="Spotify">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="mailto:donna22@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Donna. All rights reserved.</p>
+            <p>Designed and built with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <div id="portfolioLightbox" class="portfolio-lightbox" aria-hidden="true">
+        <button id="lightboxClose" class="lightbox-close" aria-label="Close image">&times;</button>
+        <img id="lightboxImage" src="" alt="Portfolio preview">
+        <button id="lightboxNext" class="lightbox-next" aria-label="Next image">&gt;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
